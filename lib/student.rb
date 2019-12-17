@@ -16,7 +16,7 @@ def self.create_table
   sql = "CREATE TABLE students (
   id INTEGER PRIMARY KEY,
   name TEXT,
-  grade INTEGER
+  grade TEXT
   );"
 
   DB[:conn].execute(sql)
@@ -29,7 +29,7 @@ def self.drop_table
 end
 
 def self.create(hash)
-  sql = "INSERT INTO students (name, grade) VALUES (?,?)"
+  sql = "INSERT INTO students (name, grade) VALUES (?,?);"
 
   DB[:conn].execute(sql, hash[:name], hash[:grade])
 end
