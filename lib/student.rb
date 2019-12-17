@@ -31,8 +31,8 @@ end
 def self.create(hash)
   sql = "INSERT INTO students (name, grade) VALUES (?,?);"
   student = Student.new (hash[:name], hash[:grade])
-  student.save 
-  student 
+  student.save
+  student
 end
 
 def save
