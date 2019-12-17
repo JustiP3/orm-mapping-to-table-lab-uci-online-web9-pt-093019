@@ -29,7 +29,6 @@ def self.drop_table
 end
 
 def self.create(hash)
-  sql = "INSERT INTO students (name, grade) VALUES (?,?);"
   student = Student.new (hash[:name], hash[:grade])
   student.save
   student
