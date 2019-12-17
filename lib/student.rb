@@ -30,7 +30,7 @@ end
 
 def self.create(hash)
   binding.pry
-end 
+end
 
 def save
   sql = "INSERT INTO students (name, grade) VALUES (?,?);"
