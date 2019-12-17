@@ -28,6 +28,10 @@ def self.drop_table
   DB[:conn].execute(sql)
 end
 
+def self.create(hash)
+  binding.pry
+end 
+
 def save
   sql = "INSERT INTO students (name, grade) VALUES (?,?);"
   DB[:conn].execute(sql, self.name, self.grade)
