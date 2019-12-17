@@ -19,7 +19,7 @@ def self.create_table
   grade TEXT
   );"
 
-  DB[:conn].execute (sql)
+  DB[:conn].execute(sql)
 end
 
 def self.drop_table
